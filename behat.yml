@@ -1,0 +1,21 @@
+default:
+#  suites:
+#    accountTests:
+#      paths: [ %paths.base%/features/accountTests ]
+#      contexts:
+#        - FeatureContext
+#        - RestContext:
+#           - baseUrl: http://app
+#        - ClientAPIContext
+#    searchTests:
+#      paths: [ %paths.base%/features/searchTests ]
+#      contexts:
+#        - FeatureContext
+#        - RestContext:
+#           - baseUrl: http://couchdb:5984
+  extensions:
+    Behat\MinkExtension:
+      base_url: https://www.lazada.vn
+      selenium2:
+        browser: chrome
+        capabilities: {"browserName": "chrome", "browser": "chrome"}
